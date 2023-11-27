@@ -13,3 +13,25 @@
 .fade-in-up {
     animation: fade-up .5s;
 }
+
+.btn-group {
+    float: left;
+    padding: 10px;
+}
+
+.dataTables_length {
+    float: left;
+    margin-top: 12px;
+}
+
+#tablaAhorros_filter {
+    float: right;
+    margin-top: 12px;
+    margin-right: 12px;
+}
+
+#tablaDeudas_filter {
+    float: right;
+    margin-top: 12px;
+    margin-right: 12px;
+}
