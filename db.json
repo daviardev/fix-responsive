@@ -1,0 +1,358 @@
+{
+    "users": [
+        {
+            "id": 0,
+            "token": "c33ccf35-9e89-494f-a060-65981b7a0832",
+            "nombres": "Jerson David Silva Arjona",
+            "total_ahorros": "23.000.000",
+            "total_deudas": "57.000",
+            "tipo_doc": "Cédula de ciudadanía",
+            "num_doc": 1045759468,
+            "detalles_ahorros": [
+                {
+                    "concepto": "Compra de comestibles y productos de limpieza",
+                    "valor": 150.75,
+                    "fecha": "15 de marzo de 2023"
+                },
+                {
+                    "concepto": "Ropa y accesorios",
+                    "valor": 200.50,
+                    "fecha": "22 de abril de 2023"
+                },
+                {
+                    "concepto": "Electrodomésticos para el hogar",
+                    "valor": 450.00,
+                    "fecha": "5 de junio de 2023"
+                },
+                {
+                    "concepto": "Entradas para concierto y cena",
+                    "valor": 300.23,
+                    "fecha": "10 de julio de 2023"
+                },
+                {
+                    "concepto": "Juguetes y regalos para cumpleaños",
+                    "valor": 120.30,
+                    "fecha": "2 de septiembre de 2023"
+                }
+            ],
+            "detalles_deudas": [
+                {
+                    "concepto": "Nueva deuda",
+                    "valor": 20000,
+                    "fecha": "2023-11-02"
+                },
+                {
+                    "concepto": "Nueva deudsadasdsada",
+                    "valor": 20000,
+                    "fecha": "2023-11-02"
+                },
+                {
+                    "concepto": "Nueva deuda",
+                    "valor": 20000,
+                    "fecha": "2023-11-02"
+                },
+                {
+                    "concepto": "Nueva deuda",
+                    "valor": 20000,
+                    "fecha": "2023-11-02"
+                },
+                {
+                    "concepto": "Compra de comestibles y productos de limpieza",
+                    "valor": 150.75,
+                    "fecha": "15 de marzo de 2023"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "token": "62a751e6-5610-4f3c-b344-69fd7f91cbca.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c",
+            "nombres": "Jhon Travolta Jimenes Hernandez",
+            "total_ahorros": "100.000.000",
+            "total_deudas": "142.500",
+            "detalles_ahorros": [
+                {
+                    "concepto": "Nuevo ahorro",
+                    "valor": 1000000,
+                    "fecha": "2023-11-02"
+                }
+            ],
+            "detalles_deudas": [
+                {
+                    "concepto": "Nueva deuda",
+                    "valor": 3000,
+                    "fecha": "2023-11-02"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "token": "7f53adf4-b57a-402e-8d84-fc84e173a990",
+            "nombres": "German Garmendia Orchata",
+            "tipo_doc":"Tarjeta de identidad",
+            "num_doc": 9873884923,
+            "total_ahorros": "9.000.000",
+            "total_deudas": "5.000.000",
+            "detalles_ahorros": [
+                {
+                    "concepto": "Nuevo ahorro",
+                    "valor": 200000,
+                    "fecha": "2023-11-02"
+                },
+                {
+                    "concepto": "Nuevo ahorro",
+                    "valor": 200000,
+                    "fecha": "2023-11-02"
+                },
+                {
+                    "concepto": "Nuevo ahorro",
+                    "valor": 200000,
+                    "fecha": "2023-11-02"
+                }
+            ],
+            "detalles_deudas": [
+                {
+                    "concepto": "Nueva deuda",
+                    "valor": 1500,
+                    "fecha": "2023-11-02"
+                },
+                {
+                    "concepto": "Nueva deuda",
+                    "valor": 1500,
+                    "fecha": "2023-11-02"
+                },
+                {
+                    "concepto": "Nueva deuda",
+                    "valor": 1500,
+                    "fecha": "2023-11-02"
+                },
+                {
+                    "concepto": "Nueva deuda",
+                    "valor": 1500,
+                    "fecha": "2023-11-02"
+                },
+                {
+                    "concepto": "Nueva deuda",
+                    "valor": 1500,
+                    "fecha": "2023-11-02"
+                }
+            ]
+        }
+    ],
+
+    "VerDetalle": [
+        {
+            "status": 200,
+            "msg": "ok",
+            "data": {
+                "cedula": 9999,
+                "ahorros": [
+                    {
+                        "periodo": "123231",
+                        "descripcion": "texto de prueba",
+                        "valor": 30000.000000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "534534",
+                        "descripcion": "texto de prueba",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "76575",
+                        "descripcion": "texto de prueba",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "53453",
+                        "descripcion": "texto de pruedasdaba",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    }
+                ],
+                "deudas": [
+                    {
+                        "periodo": "188512",
+                        "descripcion": "Texto de prueba",
+                        "valor": "120.400",
+                        "afectaci": "D"
+                    },
+                    {
+                        "periodo": "188512",
+                        "descripcion": "Texto de prueba",
+                        "valor": "120.400",
+                        "afectaci": "D"
+                    },
+                    {
+                        "periodo": "188512",
+                        "descripcion": "Texto de prueba",
+                        "valor": "120.400",
+                        "afectaci": "D"
+                    },
+                    {
+                        "periodo": "188512",
+                        "descripcion": "Texto de prueba",
+                        "valor": "120.400",
+                        "afectaci": "D"
+                    }
+                ]
+            }
+        },
+        {
+            "status": 200,
+            "msg": "ok",
+            "data": {
+                "cedula": 1111,
+                "ahorros": [
+                    {
+                        "periodo": "123231",
+                        "descripcion": "texto de prueba para otro usuario",
+                        "valor": 30000.000000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "534534",
+                        "descripcion": "texto de prueba para otro usuario",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "76575",
+                        "descripcion": "texto de prueba para otro usuario",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "53453",
+                        "descripcion": "texto de pruedasdaba para otro usuario",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba para otro usuario",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba para otro usuario",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba para otro usuario",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba para otro usuario",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba para otro usuario",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    },
+                    {
+                        "periodo": "199934",
+                        "descripcion": "texto de prueba para otro usuario",
+                        "valor": 123.000,
+                        "afectaci": "C"
+                    }
+                ],
+                "deudas": [
+                    {
+                        "periodo": "188512",
+                        "descripcion": "Texto de prueba para otro usuario",
+                        "valor": "120.400",
+                        "afectaci": "D"
+                    },
+                    {
+                        "periodo": "188512",
+                        "descripcion": "Texto de prueba para otro usuario",
+                        "valor": "120.400",
+                        "afectaci": "D"
+                    },
+                    {
+                        "periodo": "188512",
+                        "descripcion": "Texto de prueba para otro usuario",
+                        "valor": "120.400",
+                        "afectaci": "D"
+                    },
+                    {
+                        "periodo": "188512",
+                        "descripcion": "Texto de prueba para otro usuario",
+                        "valor": "120.400",
+                        "afectaci": "D"
+                    }
+                ]
+            }
+        }
+    ],
+    "VerEstado": [
+        {
+            "status": 200,
+            "msg": "ok",
+            "data": {
+                "cedula": 9999,
+                "ahorros": 2400000.000000,
+                "deudas": 771902.000000
+            }
+        }
+    ],
+    "Login": [
+        {
+        "status": 200,
+        "msg": "ok",
+        "data": {
+            "id": "504",
+            "cedula": "1234",
+            "estado": null,
+            "perfil": null,
+            "nombre": "jerson david silva arjona"
+        }
+        }
+    ]
+}
