@@ -12,9 +12,11 @@ export const dataTableConfig = {
       last: 'Último',
       next: 'Siguiente',
       previous: 'Anterior'
-    }
+    },
+    responsive: true
   },
   dom: 'B<"clear">lfrtip',
+  stateSave: true,
   buttons: {
     buttons: [
       {
