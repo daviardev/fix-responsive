@@ -53,31 +53,41 @@ const ListUsers = async () => {
       data: userData
     })
     const data = response.data[0].data // ❌ se filtra los primeros datos de la primera posición, Error
+
+    // Crear una instancia de la clase NumberFormatter
+    const FormatNumber = new NumberFormatter('$', '.', ',')
+
     let contentAhorro = ''
     let contentDeuda = ''
 
     if (data.ahorros && data.ahorros.length > 0) {
       data.ahorros.forEach((ahorro, index) => {
+        // Utilizar la instancia para formatear el número
+        const valorFormateado = FormatNumber.formatear(ahorro.valor)
+
         contentAhorro += `
         <tr>
           <td>${index + 1}</td>
           <td>${ahorro.periodo}</td>
           <td>${ahorro.descripcion}</td>
-          <td>${ahorro.valor}</td>
+          <td>${valorFormateado}</td>
           <td>${ahorro.afectaci}</td>
-          </tr>
-          `
+        </tr>
+        `
       })
     }
 
     if (data.deudas && data.deudas.length > 0) {
       data.deudas.forEach((deuda, index) => {
+        // Utilizar la instancia para formatear el número
+        const valorFormateado = FormatNumber.formatear(deuda.valor)
+
         contentDeuda += `
         <tr>
           <td>${index + 1}</td>
           <td>${deuda.periodo}</td>
           <td>${deuda.descripcion}</td>
-          <td>${deuda.valor}</td>
+          <td>${valorFormateado}</td>
           <td>${deuda.afectaci}</td>
         </tr>
         `
@@ -88,6 +98,23 @@ const ListUsers = async () => {
     bodyDeudas.innerHTML = contentDeuda
   } catch (err) {
     console.error(err)
+  }
+}
+
+// 👇 formatear los valores por puntos y comas
+class NumberFormatter {
+  constructor (simbol = '', separador = '.', sepDecimal = ',') {
+    this.simbol = simbol
+    this.separador = separador
+    this.sepDecimal = sepDecimal
+  }
+
+  formatear (num) {
+    num += ''
+    const [splitLeft, splitRight] = num.split('.')
+    const formattedLeft = splitLeft.replace(/(\d)(?=(\d{3})+$)/g, '$1' + this.separador)
+    const formattedRight = splitRight ? this.sepDecimal + splitRight : ''
+    return this.simbol + formattedLeft + formattedRight
   }
 }
 
@@ -102,15 +129,18 @@ const RenderDataUser = async () => {
 
     const data = await res.data[0].data
 
+    const numberFormatterAhorros = new NumberFormatter('$', '.', ',')
+    const numberFormatterDeudas = new NumberFormatter('$', '.', ',')
+
+    const formatNumberAhorros = numberFormatterAhorros.formatear(data.ahorros)
+    const formatNumberDeudas = numberFormatterDeudas.formatear(data.deudas)
+
     cardAhorros.forEach(e => {
-      e.innerHTML = `
-        $${data.ahorros}
-      `
+      e.innerHTML = formatNumberAhorros
     })
+
     cardDeudas.forEach(e => {
-      e.innerHTML = `
-      $${data.deudas}
-    `
+      e.innerHTML = formatNumberDeudas
     })
   } catch (err) {
     console.error(err)
