@@ -6,7 +6,8 @@ export class NumberFormatter {
   }
 
   formatear (num) {
-    num += ''
+    num = num.toString().replace(/[,.]/g, '')
+
     const [splitLeft, splitRight] = num.split('.')
     const formattedLeft = splitLeft.replace(/(\d)(?=(\d{3})+$)/g, '$1' + this.separador)
     const formattedRight = splitRight ? this.sepDecimal + splitRight : ''
