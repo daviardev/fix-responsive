@@ -117,11 +117,10 @@ const RenderDataUser = async () => {
 
     const data = await res.data[0].data
 
-    const numberFormatterAhorros = new NumberFormatter('$', '.', ',')
-    const numberFormatterDeudas = new NumberFormatter('$', '.', ',')
+    const numberFormatter = new NumberFormatter('$', '.', ',')
 
-    const formatNumberAhorros = numberFormatterAhorros.formatear(data.ahorros)
-    const formatNumberDeudas = numberFormatterDeudas.formatear(data.deudas)
+    const formatNumberAhorros = numberFormatter.formatear(data.ahorros)
+    const formatNumberDeudas = numberFormatter.formatear(data.deudas)
 
     cardAhorros.forEach(e => {
       e.innerHTML = formatNumberAhorros
