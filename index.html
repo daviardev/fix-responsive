@@ -25,6 +25,11 @@
 
   <link
     rel="stylesheet"
+    href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.css"
+  />
+
+  <link
+    rel="stylesheet"
     href="css/datatable-bootstrap.min.css"
   />
 
@@ -182,30 +187,18 @@
       <div
         id="ahorros-tab-pane"
         role="tabpanel"
-        class="tab-pane fade-in-up container mt-4"
+        class="tab-pane fade-in-up container mt-2"
         tabindex="0"
         aria-labelledby="ahorros-tab"
       >
-        <figure>
-          <h4 class="blockquote text-body-secondary text-uppercase">Total de ahorros</h4>
-          <figcaption class="blockquote-footer">
-            <i
-              class="fa-solid fa-piggy-bank"
-              style="color: #ccc;"
-            ></i>
-            <span
-              id="cardAhorros"
-              style="font-size: 16.3px;"
-            ></span>
-          </figcaption>
-        </figure>
         <h3 class="mb-2 text-gray-800">Consulte sus ahorros</h3>
-        <div class="border p-2 rounded bd-gutter flex-wrap flex-lg-nowrap">
-          <div class="table-responsive">
+        <div class="row">
+          <div class="col-lg-12">
             <table
               id="tablaAhorros"
-              class="table table-hover"
-              style="width: 100%;"
+              class="table table-hover display nowrap border shadow rounded"
+              collspacing="0"
+              width="100%"
             >
               <thead class="table table-primary">
                 <tr>
@@ -234,55 +227,41 @@
       <div
         id="deudas-tab-pane"
         role="tabpanel"
-        class="tab-pane fade-in-up container mt-4"
+        class="tab-pane fade-in-up container mt-2"
         tabindex="0"
         aria-labelledby="deudas-tab"
       >
-        <figure>
-          <h4 class="blockquote text-body-secondary text-uppercase">total de deudas</h4>
-          <figcaption class="blockquote-footer">
-            <i
-              style="color: #ccc;"
-              class="fa-solid fa-bomb"
-            ></i>
-            <span
-              id="cardDeudas"
-              style="font-size: 16.3px;"
-            ></span>
-          </figcaption>
-        </figure>
-        <h3 class="mb-2 text-gray-800">
-          Consulte sus deudas
-        </h3>
-        <div class="border p-2 rounded bd-gutter flex-wrap flex-lg-nowrap">
-          <div class="table-responsive">
-            <table
-              id="tablaDeudas"
-              class="table table-hover"
-              width="100%"
-            >
-              <thead class="table table-primary">
-                <tr>
-                  <th>#</th>
-                  <th>Periodo</th>
-                  <th>Descripción</th>
-                  <th>Valor</th>
-                  <th>Afectación</th>
-                </tr>
-              </thead>
-              <tbody id="tbody-deudas"></tbody>
-              <tfoot>
-                <tr>
-                  <th>#</th>
-                  <th>Periodo</th>
-                  <th>Descripción</th>
-                  <th>Valor</th>
-                  <th>Afectación</th>
-                </tr>
-              </tfoot>
-            </table>
-          </div>
+      <h3 class="mb-2 text-gray-800">Consulta sus deudas</h3>
+      <div class="row">
+        <div class="col-lg-12">
+          <table
+          id="tablaDeudas"
+          class="table table-hover display nowrap border shadow rounded"
+          collspacing="0"
+          width="100%"
+        >
+          <thead class="table table-primary">
+            <tr>
+              <th>#</th>
+              <th>Periodo</th>
+              <th>Descripción</th>
+              <th>Valor</th>
+              <th>Afectación</th>
+            </tr>
+          </thead>
+          <tbody id="tbody-deudas"></tbody>
+          <tfoot>
+            <tr>
+              <th>#</th>
+              <th>Periodo</th>
+              <th>Descripción</th>
+              <th>Valor</th>
+              <th>Afectación</th>
+            </tr>
+          </tfoot>
+        </table>
         </div>
+      </div>
       </div>
     </div>
   </main>
@@ -304,6 +283,8 @@
 
 <script src="/js/pdfmake.min.js"></script>
 <script src="/js/pdfmake-fonts.min.js"></script>
+
+<script src="https://cdn.datatables.net/responsive/2.5.0/js/dataTables.responsive.js"></script>
 <!-- <script type="module" src="./js/test.js"></script> -->
 
 </html>
