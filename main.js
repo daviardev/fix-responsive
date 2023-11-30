@@ -74,7 +74,7 @@ const ListUsers = async () => {
           <td>${index + 1}</td>
           <td>${dateFormatter}</td>
           <td>${ahorro.descripcion}</td>
-          <td>${valorFormateado}</td>
+          <td style="text-align: end;">${valorFormateado}</td>
           <td>${ahorro.afectaci}</td>
         </tr>
         `
@@ -92,7 +92,7 @@ const ListUsers = async () => {
           <td>${index + 1}</td>
           <td>${dateFormatter}</td>
           <td>${deuda.descripcion}</td>
-          <td>${valorFormateado}</td>
+          <td style="text-align: end;>${valorFormateado}</td>
           <td>${deuda.afectaci}</td>
         </tr>
         `
