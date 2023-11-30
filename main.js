@@ -1,8 +1,9 @@
 import axios from 'axios' // 👈 hacer las consultas que contengan un body
 
 import { dataTableConfig } from './js/config-table' // 👈 configuración del datatable
-
 import { NumberFormatter } from './js/formateMoney'
+
+import { FormatDate } from './js/formatDate'
 
 let dataTableIsInitialized = false // 👈 check table is initialized
 let dtAhorros
@@ -66,11 +67,12 @@ const ListUsers = async () => {
       data.ahorros.forEach((ahorro, index) => {
         // Utilizar la instancia para formatear el número
         const valorFormateado = FormatNumber.formatear(ahorro.valor)
+        const dateFormatter = FormatDate(ahorro.periodo)
 
         contentAhorro += `
         <tr>
           <td>${index + 1}</td>
-          <td>${ahorro.periodo}</td>
+          <td>${dateFormatter}</td>
           <td>${ahorro.descripcion}</td>
           <td>${valorFormateado}</td>
           <td>${ahorro.afectaci}</td>
@@ -83,11 +85,12 @@ const ListUsers = async () => {
       data.deudas.forEach((deuda, index) => {
         // Utilizar la instancia para formatear el número
         const valorFormateado = FormatNumber.formatear(deuda.valor)
+        const dateFormatter = FormatDate(deuda.periodo)
 
         contentDeuda += `
         <tr>
           <td>${index + 1}</td>
-          <td>${deuda.periodo}</td>
+          <td>${dateFormatter}</td>
           <td>${deuda.descripcion}</td>
           <td>${valorFormateado}</td>
           <td>${deuda.afectaci}</td>
