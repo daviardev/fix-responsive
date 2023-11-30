@@ -2,6 +2,8 @@ import axios from 'axios' // 👈 hacer las consultas que contengan un body
 
 import { dataTableConfig } from './js/config-table' // 👈 configuración del datatable
 
+import { NumberFormatter } from './js/formateMoney'
+
 let dataTableIsInitialized = false // 👈 check table is initialized
 let dtAhorros
 let dtDeudas
@@ -98,23 +100,6 @@ const ListUsers = async () => {
     bodyDeudas.innerHTML = contentDeuda
   } catch (err) {
     console.error(err)
-  }
-}
-
-// 👇 formatear los valores por puntos y comas
-class NumberFormatter {
-  constructor (simbol = '', separador = '.', sepDecimal = ',') {
-    this.simbol = simbol
-    this.separador = separador
-    this.sepDecimal = sepDecimal
-  }
-
-  formatear (num) {
-    num += ''
-    const [splitLeft, splitRight] = num.split('.')
-    const formattedLeft = splitLeft.replace(/(\d)(?=(\d{3})+$)/g, '$1' + this.separador)
-    const formattedRight = splitRight ? this.sepDecimal + splitRight : ''
-    return this.simbol + formattedLeft + formattedRight
   }
 }
 
