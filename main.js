@@ -70,11 +70,11 @@ const ListUsers = async () => {
         const dateFormatter = FormatDate(ahorro.periodo)
 
         contentAhorro += `
-        <tr>
+        <tr> 
           <td>${index + 1}</td>
           <td>${dateFormatter}</td>
           <td>${ahorro.descripcion}</td>
-          <td style="text-align: end;">${valorFormateado}</td>
+          <td>${valorFormateado}</td>
           <td>${ahorro.afectaci}</td>
         </tr>
         `
@@ -83,16 +83,15 @@ const ListUsers = async () => {
 
     if (data.deudas && data.deudas.length > 0) {
       data.deudas.forEach((deuda, index) => {
-        // Utilizar la instancia para formatear el número
         const valorFormateado = FormatNumber.formatear(deuda.valor)
         const dateFormatter = FormatDate(deuda.periodo)
 
         contentDeuda += `
-        <tr>
+        <tr> 
           <td>${index + 1}</td>
           <td>${dateFormatter}</td>
           <td>${deuda.descripcion}</td>
-          <td style="text-align: end;>${valorFormateado}</td>
+          <td>${valorFormateado}</td>
           <td>${deuda.afectaci}</td>
         </tr>
         `
