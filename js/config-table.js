@@ -15,7 +15,8 @@ export const dataTableConfig = {
     }
   },
   dom: 'B<"clear">lfrtip',
-  stateSave: true,
+  responsive: true,
+  stateSave: false,
   buttons: {
     buttons: [
       {
