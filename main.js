@@ -70,8 +70,8 @@ const ListUsers = async () => {
         const dateFormatter = FormatDate(ahorro.periodo)
 
         contentAhorro += `
-        <tr> 
-          <td>${index + 1}</td>
+        <tr>
+          <th scope="row">${index + 1}</th>
           <td>${dateFormatter}</td>
           <td>${ahorro.descripcion}</td>
           <td>${valorFormateado}</td>
@@ -87,8 +87,8 @@ const ListUsers = async () => {
         const dateFormatter = FormatDate(deuda.periodo)
 
         contentDeuda += `
-        <tr> 
-          <td>${index + 1}</td>
+        <tr>
+          <th scope="row">${index + 1}</th>
           <td>${dateFormatter}</td>
           <td>${deuda.descripcion}</td>
           <td>${valorFormateado}</td>
