@@ -10,25 +10,28 @@
     href="css/styles.css"
   />
 
-  <link
-    rel="stylesheet"
-    href="css/bootrap.min.css"
-  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0-alpha3/css/bootstrap.min.css"
+    />
 
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    integrity="Afectación512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-    crossorigin="anonymous"
-    referrerpolicy="no-referrer"
-  />
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/1.13.4/css/dataTables.bootstrap5.min.css"
+    />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.datatables.net/responsive/2.4.1/css/responsive.bootstrap5.min.css"
+    />
 
-  <link rel="stylesheet" href="https://cdn.datatables.net/responsive/2.5.0/css/responsive.dataTables.css">
-
-  <link
-    rel="stylesheet"
-    href="css/datatable-bootstrap.min.css"
-  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="Afectación512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
   <title>fontrade - Afiliado</title>
 </head>
@@ -176,10 +179,10 @@
                 </div>
               </div>
             </div>
-            </div>
           </div>
         </div>
       </div>
+    </div>
 
       <div
         id="ahorros-tab-pane"
@@ -202,20 +205,20 @@
       </figure>
       <div class="card">
         <div class="mb-2 text-uppercase fs-6 card-header text-gray-800">Consulte sus ahorros</div>
-        <div class="card-body table-responsive">
+        <div class="card-body">
           <table
             id="tablaAhorros"
-            class="table table-hover border rounded shadow sticky-top"
+            class="table table-hover border nowrap rounded shadow"
             cellspacing="0"
-            style="width: 100%;"
+            style="width:100%"
           >
-            <thead class="table table-primary">
+            <thead class="table-primary">
               <tr>
-                <th scope="col">#</th>
-                <th scope="col">Periodo</th>
-                <th scope="col">Descripción</th>
-                <th scope="col">Valor</th>
-                <th scope="col">Afectación</th>
+                <th>#</th>
+                <th>Periodo</th>
+                <th>Descripción</th>
+                <th>Valor</th>
+                <th>Afectación</th>
               </tr>
             </thead>
             <tbody id="tbody-ahorros"></tbody>
@@ -253,24 +256,24 @@
       </figure>
       <div class="card">
         <div class="mb-2 text-gray-800 fs-6 text-uppercase card-header">Consulte sus deudas</div>
-        <div class="card-body table-responsive">
+        <div class="card-body">
           <table
-          id="tablaDeudas"
-          class="table table-hover border rounded shadow sticky-top"
-          cellspacing="0"
-          style="width: 100%;"
-        >
+            id="tablaDeudas"
+            class="table table-hover border rounded shadow"
+            cellspacing="0"
+            width="100%"
+          >
           <thead class="table table-primary">
             <tr>
-              <th scope="col">#</th>
-              <th scope="col">Periodo</th>
-              <th scope="col">Descripción</th>
-              <th scope="col">Valor</th>
-              <th scope="col">Afectación</th>
+              <th>#</th>
+              <th>Periodo</th>
+              <th>Descripción</th>
+              <th>Valor</th>
+              <th>Afectación</th>
             </tr>
           </thead>
           <tbody id="tbody-deudas"></tbody>
-          <tfoot class="table table-primary">
+          <tfoot class="table-primary">
             <tr>
               <th style="text-align: start;" colspan="2">Total</th>
               <th></th>
@@ -305,6 +308,9 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.66/vfs_fonts.min.js"></script>
 
 <script src="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://cdn.datatables.net/responsive/2.4.1/js/dataTables.responsive.min.js"></script>
+<script src="https://cdn.datatables.net/responsive/2.4.1/js/responsive.bootstrap5.min.js"></script>
 <!-- <script type="module" src="./js/test.js"></script> -->
 
 </html>

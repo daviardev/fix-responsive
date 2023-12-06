@@ -23,6 +23,11 @@ const InitDataTable = async () => {
   dtDeudas = $('#tablaDeudas').DataTable(dataTableConfig) // 👈 selector de la tabla deudas y pasando las opciones del datatable
   // -------------------------------------------------------------
 
+  // 👇 resolviendo bug, tablas no se hacían completamente responsive
+  $('button[data-bs-toggle="tab"]').on('shown.bs.tab', () => {
+    $($.fn.dataTable.tables(true)).DataTable().columns.adjust().responsive.recalc()
+  })
+
   dataTableIsInitialized = true // 👈 cuando el datatable inicia, su estado cambia a verdadero
 }
 
