@@ -32,6 +32,13 @@
     display: none;
 }
 
+div.dataTables_filter > label {
+    background-color: #cfe2ff;
+    border-radius: 6px;
+    color: black;
+    padding: 5px;
+}
+
 #tablaAhorros_filter {
     float: right;
     margin-top: 12px;
@@ -44,8 +51,20 @@
     margin-right: 12px;
 }
 
+td:nth-child(2) {
+    text-align: center;
+}
+
+td:nth-child(3) {
+    text-align: center;
+}
+
 td:nth-child(4) {
     text-align: right;
+}
+
+td:nth-child(5) {
+    text-align: end;
 }
 
 @media (max-width: 411px) {
