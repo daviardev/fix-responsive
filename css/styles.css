@@ -14,6 +14,10 @@
     animation: fade-up .5s;
 }
 
+.dataTables_sizing {
+    display: none;
+}
+
 .btn-group {
     float: left;
     padding: 10px;
@@ -44,67 +48,12 @@ td:nth-child(4) {
     text-align: right;
 }
 
-/* @media (max-width: 650px) {
+@media (max-width: 411px) {
     .figure-card {
         display: block;
     }
 
-    th {
+    tfoot {
         display: none;
     }
-
-    td {
-        display: grid;
-        gap: .5rem;
-        grid-template-columns: 15ch auto;
-        padding: .5rem 1rem;
-        text-align: right;
-
-        &:first-child {
-            padding-top: 2rem;
-        }
-
-        &:last-child {
-            padding-bottom: 2rem;
-        }
-
-        &:nth-of-type(1)::before {
-            border-radius: 6px;
-            margin: 8px 5px;
-            height: 30px;
-            text-align: center;
-        }
-
-        &:nth-of-type(2)::before {
-            content: "Periodo: ";
-            border-radius: 6px;
-            margin: 8px 5px;
-            height: 30px;
-            text-align: center;
-        }
-
-        &:nth-of-type(3)::before {
-            content: "Descripción: ";
-            border-radius: 6px;
-            margin: 8px 5px;
-            height: 30px;
-            text-align: center;
-        }
-
-        &:nth-of-type(4)::before {
-            content: "Valor: ";
-            border-radius: 6px;
-            margin: 8px 5px;
-            height: 30px;
-            text-align: center;
-        }
-
-        &:nth-of-type(5)::before {
-            content: "Afectacción: ";
-            border-radius: 6px;
-            margin: 8px 5px;
-            height: 30px;
-            text-align: center;
-        }
-    }
-} */
+}
