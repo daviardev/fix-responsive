@@ -1,9 +1,6 @@
 import axios from 'axios' // 👈 hacer las consultas que contengan un body
 
-import { dataTableConfig } from './js/config-table' // 👈 configuración del datatable
-import { NumberFormatter } from './js/formateMoney'
-
-import { FormatDate } from './js/formatDate'
+import { FormatDate, NumberFormatter, dataTableConfig } from './js/config-table'
 
 let dataTableIsInitialized = false // 👈 check table is initialized
 let dtAhorros
