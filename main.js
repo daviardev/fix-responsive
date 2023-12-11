@@ -25,10 +25,12 @@ const InitDataTable = async () => {
 
   // 👇 resolviendo bug, tablas no se hacían completamente responsive
   $('button[data-bs-toggle="tab"]').on('shown.bs.tab', () => {
-    $($.fn.dataTable.tables(true))
-      .DataTable()
-      .columns.adjust()
+    $.fn.dataTable.tables({
+      visible: true,
+      api: true
+    })
       .responsive.recalc()
+      .columns.adjust()
   })
 
   dataTableIsInitialized = true // 👈 cuando el datatable inicia, su estado cambia a verdadero
