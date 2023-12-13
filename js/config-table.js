@@ -18,8 +18,8 @@ export const dataTableConfig = {
     buttons: [
       {
         extend: 'excel',
-        text: '<i class="fa-solid fa-table" style="color: #ffffff;"></i>',
-        className: 'btn btn-success mx-1 rounded',
+        text: '<i class="fa-solid fa-table text-success"></i>',
+        className: 'btn mx-1 rounded green-color border border-0',
         attr: {
           title: 'Descargar datos a Excel',
           id: 'Excel'
@@ -27,8 +27,8 @@ export const dataTableConfig = {
       },
       {
         extend: 'pdf',
-        text: '<i class="fa-solid fa-file-pdf" style="color: #ffffff;"></i>',
-        className: 'btn btn-danger mx-1 rounded',
+        text: '<i class="fa-solid fa-file-pdf text-danger"></i>',
+        className: 'btn mx-1 rounded bg-danger-subtle border border-0',
         attr: {
           title: 'Descargar datos a PDF',
           id: 'PDF'
@@ -36,8 +36,8 @@ export const dataTableConfig = {
       },
       {
         extend: 'print',
-        text: '<i class="fa-solid fa-print" style="color: #ffffff;"></i>',
-        className: 'btn mx-1 rounded',
+        text: '<i class="fa-solid fa-print text-secondary"></i>',
+        className: 'btn mx-1 rounded bg-body-secondary border border-0',
         attr: {
           title: 'Imprimir datos',
           id: 'Imprimir'

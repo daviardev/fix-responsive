@@ -121,67 +121,31 @@
         </figure>
         
         <div class="container-fluid">
-          <div class="row">
-            <div class="col-sm-6 mb-sm-0 mb-4">
-              <div
-                class="card shadow h-100 py-2"
-                style="border-left: .25rem solid #8ca8ce;"
-              >
-              <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                  <div class="col mr-2">
-                    <h6
-                      style="color: #7296c9;"
-                      class="font-weight-bold text-uppercase mb-2">
-                      Mis ahorros
-                    </h6>
-                    <p
-                      id="cardAhorros"
-                      class="h5 font-weight-bold"
-                    ></p>
-                  </div>
+          <div class="row" style="display: flex; justify-content: center;">
 
-                  <div class="col-auto">
-                    <i
-                      style="color: #ccc;"
-                      class="fa-solid fa-piggy-bank fa-3x"
-                    ></i>
-                  </div>
-                </div>
-              </div>
+            <div class="col-md-3">
+              <a href="#" class="cards ahorros">
+                <div class="overlay"></div>
+             <div class="circle">
+               <i class='fa-solid fa-piggy-bank fa-3x'></i>
+             </div>
+             <p>Mis ahorros</p>
+             <p id="cardAhorros"></p>
+           </a>
             </div>
+
+            <div class="col-sm-3">
+              <a href="#" class="cards deudas">
+                <div class="overlay"></div>
+             <div class="circle">
+               <i class='fa-solid fa-bomb fa-3x'></i>
+             </div>
+             <p>Mis deudas</p>
+             <p id="cardDeudas"></p>
+           </a>
             </div>
-            <div class="col-sm-6 mb-sm-0 mb-4">
-              <div
-                class="card shadow h-100 py-2"
-                style="border-left: .25rem solid #ce000c;"
-              >
-              <div class="card-body">
-                <div class="row no-gutters align-items-center">
-                  <div class="col mr-2">
-                    <h6
-                      style="color: #ce000c;"
-                      class="font-weight-bold text-uppercase mb-1"
-                    >
-                      Mis deudas
-                    </h6>
-                    <p
-                      id="cardDeudas"
-                      class="h5 font-weight-bold"
-                    ></p>
-                  </div>
-                  <div class="col-auto">
-                    <i
-                      style="color: #ccc;"
-                      class="fa-solid fa-bomb fa-3x"
-                    ></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
+        </div>
     </div>
 
     <div
@@ -204,15 +168,15 @@
       </figcaption>
     </figure>
     <div class="card">
-      <div class="mb-2 text-gray-800 fs-6 text-uppercase card-header">Consulte sus ahorros</div>
+      <div class="mb-2 text-gray-800 fs-6 text-uppercase card-header" style="background-color: #3773fe; color: white; font-weight: bold">Consulte sus ahorros</div>
       <div class="card-body">
         <table
           id="tablaAhorros"
-          class="table table-hover border rounded shadow"
+          class="table table-striped"
           cellspacing="0"
           style="width:100%;"
         >
-        <thead class="table table-primary">
+        <thead style="background-color: #3773fe; color: white;">
           <tr>
             <th>#</th>
             <th>Periodo</th>
@@ -222,7 +186,7 @@
           </tr>
         </thead>
         <tbody id="tbody-ahorros"></tbody>
-        <tfoot class="table table-primary">
+        <tfoot style="background-color: #3773fe; color: white;">
           <th>Total</th>
           <th></th>
           <th></th>
@@ -254,15 +218,15 @@
         </figcaption>
       </figure>
       <div class="card">
-        <div class="mb-2 text-gray-800 fs-6 text-uppercase card-header">Consulte sus deudas</div>
+        <div class="mb-2 text-gray-800 fs-6 text-uppercase card-header" style="background-color: #3773fe; color: white; font-weight: bold;">Consulte sus deudas</div>
         <div class="card-body">
           <table
             id="tablaDeudas"
-            class="table table-hover border rounded shadow"
+            class="table table-striped shadow"
             cellspacing="0"
             style="width:100%;"
           >
-          <thead class="table-primary">
+          <thead style="background-color: #3773fe; color: white;">
             <tr>
               <th>#</th>
               <th>Periodo</th>
@@ -272,7 +236,7 @@
             </tr>
           </thead>
           <tbody id="tbody-deudas"></tbody>
-          <tfoot class="table-primary">
+          <tfoot style="background-color: #3773fe; color: white;">
             <th>Total</th>
             <th></th>
             <th></th>
@@ -287,7 +251,6 @@
   </main>
 </body>
 <script src="main.js" type="module"></script>
-<script src="./js/aria-functions.js"></script>
 
 <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
 
