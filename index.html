@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="es">
+<html lang="es-CO">
 
 <head>
   <meta charset="UTF-8" />
@@ -39,63 +39,66 @@
 <body>
   <main class="container">
     <header class="mt-2">
-      <div class="list-group">
-        <ul
-          class="nav nav-underline"
-          role="tablist"
-        >
-          <li
-            class="nav-item"
-            role="presentation"
+      <div class="card p-2 bg-light-subtle">
+        <div class="list-group">
+          <ul
+            class="nav nav-pills"
+            role="tablist"
+            style="display: flex; justify-content: center;"
           >
-            <button
-              id="inicio-tab"
-              type="button"
-              role="tab"
-              class="nav-link text-black active"
-              data-bs-toggle="tab"
-              aria-controls="inicio-tab-pane"
-              aria-selected="true"
-              data-bs-target="#inicio-tab-pane"
+            <li
+              class="nav-item"
+              role="presentation"
             >
-              Inicio
-            </button>
-          </li>
-          <li
-            class="nav-item"
-            role="presentation"
-          >
-            <button
-              id="ahorros-tab"
-              role="tab"
-              type="button"
-              class="nav-link text-black"
-              aria-controls="ahorros-tab-pane"
-              aria-selected="false"
-              data-bs-target="#ahorros-tab-pane"
-              data-bs-toggle="tab"
+              <button
+                id="inicio-tab"
+                type="button"
+                role="tab"
+                class="nav-link active"
+                data-bs-toggle="tab"
+                aria-controls="inicio-tab-pane"
+                aria-selected="true"
+                data-bs-target="#inicio-tab-pane"
+              >
+                Inicio
+              </button>
+            </li>
+            <li
+              class="nav-item"
+              role="presentation"
             >
-              Mis ahorros
-            </button>
-          </li>
-          <li
-            class="nav-item"
-            role="presentation"
-          >
-            <button
-              id="deudas-tab"
-              role="tab"
-              type="button"
-              class="nav-link text-black"
-              aria-selected="false"
-              aria-controls="deudas-tab-pane"
-              data-bs-target="#deudas-tab-pane"
-              data-bs-toggle="tab"
+              <button
+                id="ahorros-tab"
+                role="tab"
+                type="button"
+                class="nav-link"
+                aria-controls="ahorros-tab-pane"
+                aria-selected="false"
+                data-bs-target="#ahorros-tab-pane"
+                data-bs-toggle="tab"
+              >
+                Mis ahorros
+              </button>
+            </li>
+            <li
+              class="nav-item"
+              role="presentation"
             >
-              Mis deudas
-            </button>
-          </li>
-        </ul>
+              <button
+                id="deudas-tab"
+                role="tab"
+                type="button"
+                class="nav-link"
+                aria-selected="false"
+                aria-controls="deudas-tab-pane"
+                data-bs-target="#deudas-tab-pane"
+                data-bs-toggle="tab"
+              >
+                Mis deudas
+              </button>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
       
@@ -120,32 +123,51 @@
           </figcaption>
         </figure>
         
-        <div class="container-fluid">
-          <div class="row" style="display: flex; justify-content: center;">
-
-            <div class="col-md-3">
-              <a href="#" class="cards ahorros">
-                <div class="overlay"></div>
-             <div class="circle">
-               <i class='fa-solid fa-piggy-bank fa-3x'></i>
-             </div>
-             <p>Mis ahorros</p>
-             <p id="cardAhorros"></p>
-           </a>
-            </div>
-
-            <div class="col-sm-3">
-              <a href="#" class="cards deudas">
-                <div class="overlay"></div>
-             <div class="circle">
-               <i class='fa-solid fa-bomb fa-3x'></i>
-             </div>
-             <p>Mis deudas</p>
-             <p id="cardDeudas"></p>
-           </a>
-            </div>
-        </div>
-        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6 mb-sm-0 mb-4">
+              <div class="card cards ahorros shadow h-100 py-2">
+                  <div class="overlay"></div>
+                  <div class="card-body">
+                      <div class="row no-gutters align-items-center">
+                          <div class="col-auto">
+                              <div class="circle">
+                                  <i class="fa-solid fa-piggy-bank fa-3x"></i>
+                              </div>
+                          </div>
+                          <div class="col-auto z-3">
+                            <p class="font-weight-bold text-uppercase">
+                                Mis ahorros
+                            </p>
+                            <p id="cardAhorros" class="h5 font-weight-bold"></p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      
+              <div class="col-sm-6 mb-sm-0 mb-4">
+                  <div class="card cards deudas shadow h-100 py-2">
+                      <div class="overlay"></div>
+                      <div class="card-body">
+                          <div class="row no-gutters align-items-center">
+                              <div class="col-auto">
+                                  <div class="circle">
+                                      <i class="fa-solid fa-bomb fa-3x"></i>
+                                  </div>
+                              </div>
+                              <div class="col-auto z-3">
+                                <p class="font-weight-bold text-uppercase">
+                                    Mis deudas
+                                </p>
+                                <p id="cardDeudas" class="h5 font-weight-bold"></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
     </div>
 
     <div
@@ -176,7 +198,7 @@
           cellspacing="0"
           style="width:100%;"
         >
-        <thead style="background-color: #3773fe; color: white;">
+        <thead style="background-color: #202020; color: white;">
           <tr>
             <th>#</th>
             <th>Periodo</th>
@@ -186,11 +208,11 @@
           </tr>
         </thead>
         <tbody id="tbody-ahorros"></tbody>
-        <tfoot style="background-color: #3773fe; color: white;">
+        <tfoot style="background-color: #dddada; color: #136b13;">
           <th>Total</th>
           <th></th>
           <th></th>
-          <th style="text-align: end;" id="cardDeudas"></th>
+          <th style="text-align: end;" id="cardAhorros"></th>
           <th></th>
         </tfoot>
       </table>
@@ -226,7 +248,7 @@
             cellspacing="0"
             style="width:100%;"
           >
-          <thead style="background-color: #3773fe; color: white;">
+          <thead style="background-color: #202020; color: white;">
             <tr>
               <th>#</th>
               <th>Periodo</th>
@@ -236,7 +258,7 @@
             </tr>
           </thead>
           <tbody id="tbody-deudas"></tbody>
-          <tfoot style="background-color: #3773fe; color: white;">
+          <tfoot style="background-color: #dddada; color: #136b13;">
             <th>Total</th>
             <th></th>
             <th></th>

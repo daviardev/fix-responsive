@@ -76,6 +76,12 @@ const ListUsers = async () => {
         const valorFormateado = FormatNumber.formatear(ahorro.valor)
         const dateFormatter = FormatDate(ahorro.periodo)
 
+        if (ahorro.afectaci === 'C') {
+          ahorro.afectaci = 'Crédito'
+        } else if (ahorro.afectaci === 'D') {
+          ahorro.afectaci = 'Débito'
+        }
+
         contentAhorro += `
         <tr>
           <th scope="row">${index + 1}</th>
@@ -92,6 +98,12 @@ const ListUsers = async () => {
       data.deudas.forEach((deuda, index) => {
         const valorFormateado = FormatNumber.formatear(deuda.valor)
         const dateFormatter = FormatDate(deuda.periodo)
+
+        if (deuda.afectaci === 'C') {
+          deuda.afectaci = 'Crédito'
+        } else if (deuda.afectaci === 'D') {
+          deuda.afectaci = 'Débito'
+        }
 
         contentDeuda += `
         <tr>
