@@ -142,56 +142,54 @@
 }
 
 .figure-card {
+  display: none;
+}
+
+div.dataTables_filter>label {
+  background-color: #3773fe;
+  border-radius: 6px;
+  color: white;
+  padding: 3px;
+}
+
+.green-color {
+  background-color: #b5ffb5 !important;
+}
+
+#tablaAhorros_filter {
+  float: right;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+#tablaDeudas_filter {
+  float: right;
+  margin-top: 12px;
+  margin-right: 12px;
+}
+
+td:nth-child(2) {
+  text-align: start;
+}
+
+td:nth-child(3) {
+  text-align: start;
+}
+
+td:nth-child(4) {
+  text-align: right;
+}
+
+td:nth-child(5) {
+  text-align: center;
+}
+
+@media (max-width: 406px) {
   .figure-card {
+    display: block;
+  }
+
+  tfoot {
     display: none;
-  }
-
-  div.dataTables_filter>label {
-    background-color: #3773fe;
-    border-radius: 6px;
-    color: white;
-    padding: 3px;
-  }
-
-  .green-color {
-    background-color: #b5ffb5 !important;
-  }
-
-  #tablaAhorros_filter {
-    float: right;
-    margin-top: 12px;
-    margin-right: 12px;
-  }
-
-  #tablaDeudas_filter {
-    float: right;
-    margin-top: 12px;
-    margin-right: 12px;
-  }
-
-  td:nth-child(2) {
-    text-align: start;
-  }
-
-  td:nth-child(3) {
-    text-align: start;
-  }
-
-  td:nth-child(4) {
-    text-align: right;
-  }
-
-  td:nth-child(5) {
-    text-align: center;
-  }
-
-  @media (max-width: 406px) {
-    .figure-card {
-      display: block;
-    }
-
-    tfoot {
-      display: none;
-    }
   }
 }
