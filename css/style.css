@@ -1,14 +1,14 @@
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #eee;
+  background-color: #eee;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #ccc;
-    border-radius: 12px;
+  background-color: #ccc;
+  border-radius: 12px;
 }
 
 
@@ -30,40 +30,40 @@
 .cards {
   overflow: hidden;
   position: relative;
-  box-shadow: 0 14px 26px rgba(0,0,0,0.04);
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.04);
   transition: all 0.3s ease-out;
-  
-    &:hover {
-      transform: translateY(-5px) scale(1.005) translateZ(0);
-      box-shadow: 0 24px 36px rgba(0,0,0,0.11),
-        0 24px 46px var(--box-shadow-color);
-    }
-    
-    &:hover .overlay {
-      transform: scale(4) translateZ(0);
-    }
-    
-    &:hover .circle {
-      border-color: var(--bg-color-light);
-      background: var(--bg-color);
-      color: #ccc;
-    }
-    
-    &:hover .circle:after {
-      background: var(--bg-color-light);
-    }
-    
-    &:hover p {
-      color: var(--text-color-hover);
-    }
-    
-    & p {
-      font-size: 17px;
-      color: #4C5656;
-      margin-top: 0px;
-      z-index: 1000;
-      transition: color 0.3s ease-out;
-    }
+
+  &:hover {
+    transform: translateY(-5px) scale(1.005) translateZ(0);
+    box-shadow: 0 24px 36px rgba(0, 0, 0, 0.11),
+      0 24px 46px var(--box-shadow-color);
+  }
+
+  &:hover .overlay {
+    transform: scale(4) translateZ(0);
+  }
+
+  &:hover .circle {
+    border-color: var(--bg-color-light);
+    background: var(--bg-color);
+    color: #ccc;
+  }
+
+  &:hover .circle:after {
+    background: var(--bg-color-light);
+  }
+
+  &:hover p {
+    color: var(--text-color-hover);
+  }
+
+  & p {
+    font-size: 17px;
+    color: #4C5656;
+    margin-top: 0px;
+    z-index: 1000;
+    transition: color 0.3s ease-out;
+  }
 }
 
 
@@ -101,7 +101,7 @@
 
 .overlay {
   width: 118px;
-  position: absolute; 
+  position: absolute;
   height: 118px;
   border-radius: 9999px;
   background: var(--bg-color);
@@ -112,85 +112,86 @@
 }
 
 @keyframes fade-up {
-    0% {
-        opacity: 0;
-        transform: translateY(100px);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(100px);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0px);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .fade-in-up {
-    animation: fade-up .5s;
+  animation: fade-up .5s;
 }
 
 .dataTables_sizing {
-    display: none;
+  display: none;
 }
 
 .btn-group {
-    float: left;
-    padding: 10px;
+  float: left;
+  padding: 10px;
 }
 
 .dataTables_length {
-    float: left;
-    margin-top: 12px;
+  float: left;
+  margin-top: 12px;
 }
 
 .figure-card {
-.figure-card {
+  .figure-card {
     display: none;
-}
+  }
 
-div.dataTables_filter > label {
+  div.dataTables_filter>label {
     background-color: #3773fe;
     border-radius: 6px;
     color: white;
     padding: 3px;
-}
+  }
 
-.green-color {
+  .green-color {
     background-color: #b5ffb5 !important;
-}
+  }
 
-#tablaAhorros_filter {
+  #tablaAhorros_filter {
     float: right;
     margin-top: 12px;
     margin-right: 12px;
-}
+  }
 
-#tablaDeudas_filter {
+  #tablaDeudas_filter {
     float: right;
     margin-top: 12px;
     margin-right: 12px;
-}
+  }
 
-td:nth-child(2) {
+  td:nth-child(2) {
     text-align: start;
-}
+  }
 
-td:nth-child(3) {
+  td:nth-child(3) {
     text-align: start;
-}
+  }
 
-td:nth-child(4) {
+  td:nth-child(4) {
     text-align: right;
-}
+  }
 
-td:nth-child(5) {
+  td:nth-child(5) {
     text-align: center;
-}
+  }
 
-@media (max-width: 406px) {
+  @media (max-width: 406px) {
     .figure-card {
-        display: block;
+      display: block;
     }
 
     tfoot {
-        display: none;
+      display: none;
     }
+  }
 }
