@@ -46,6 +46,7 @@
     &:hover .circle {
       border-color: var(--bg-color-light);
       background: var(--bg-color);
+      color: #ccc;
     }
     
     &:hover .circle:after {
@@ -140,6 +141,7 @@
     margin-top: 12px;
 }
 
+.figure-card {
 .figure-card {
     display: none;
 }
