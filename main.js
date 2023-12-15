@@ -1,5 +1,3 @@
-import axios from 'axios' // 👈 hacer las consultas que contengan un body
-
 import { FormatDate, NumberFormatter, dataTableConfig } from './js/config-table'
 
 let dataTableIsInitialized = false // 👈 check table is initialized
