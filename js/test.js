@@ -1,5 +1,3 @@
-import axios from 'axios'
-
 // -----------------------------
 const ced = 17953454 // 📄 número de documentos
 const pwd = '1826' // 🔐 contraseña del usuario
