@@ -2,7 +2,6 @@ export const dataTableConfig = {
   language: {
     zeroRecords: 'Ningún dato ha sido encontrado',
     infoEmpty: 'No se encontró ningún registro',
-    info: 'Mostrando de _START_ a _END_ de un total de _TOTAL_ registros',
     searchPlaceholder: 'Búsqueda',
     search: '<i style="margin: 6px;" class="fa-solid fa-magnifying-glass"></i>',
     loadingRecords: 'Cargando registros'
@@ -10,6 +9,7 @@ export const dataTableConfig = {
   dom: 'B<"clear">lfrtip',
   responsive: true,
   stateSave: false,
+  info: false,
   scrollY: 280,
   scrollCollapse: true,
   bPaginate: false,
