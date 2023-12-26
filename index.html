@@ -38,235 +38,254 @@
 
 <body>
   <main class="container">
-    <header class="mt-2">
-      <div class="p-2">
-        <div class="list-group">
-          <ul
-            class="nav nav-pills"
-            role="tablist"
-          >
-            <li
-              class="nav-item"
-              role="presentation"
-            >
-              <button
-                id="inicio-tab"
-                type="button"
-                role="tab"
-                class="nav-link active"
-                data-bs-toggle="tab"
-                aria-controls="inicio-tab-pane"
-                aria-selected="true"
-                data-bs-target="#inicio-tab-pane"
+    <div class="card mt-3">
+      <div class="card-header">
+        <header>
+            <div class="list-group">
+              <ul
+                class="nav nav-pills"
+                role="tablist"
               >
-                Inicio
-              </button>
-            </li>
-            <li
-              class="nav-item"
-              role="presentation"
-            >
-              <button
-                id="ahorros-tab"
-                role="tab"
-                type="button"
-                class="nav-link"
-                aria-controls="ahorros-tab-pane"
-                aria-selected="false"
-                data-bs-target="#ahorros-tab-pane"
-                data-bs-toggle="tab"
-              >
-                Mis ahorros
-              </button>
-            </li>
-            <li
-              class="nav-item"
-              role="presentation"
-            >
-              <button
-                id="deudas-tab"
-                role="tab"
-                type="button"
-                class="nav-link"
-                aria-selected="false"
-                aria-controls="deudas-tab-pane"
-                data-bs-target="#deudas-tab-pane"
-                data-bs-toggle="tab"
-              >
-                Mis deudas
-              </button>
-            </li>
-          </ul>
-        </div>
+                <li
+                  class="nav-item"
+                  role="presentation"
+                >
+                  <button
+                    id="inicio-tab"
+                    type="button"
+                    role="tab"
+                    class="nav-link active"
+                    data-bs-toggle="tab"
+                    aria-controls="inicio-tab-pane"
+                    aria-selected="true"
+                    data-bs-target="#inicio-tab-pane"
+                  >
+                    Inicio
+                  </button>
+                </li>
+                <li
+                  class="nav-item"
+                  role="presentation"
+                >
+                  <button
+                    id="ahorros-tab"
+                    role="tab"
+                    type="button"
+                    class="nav-link"
+                    aria-controls="ahorros-tab-pane"
+                    aria-selected="false"
+                    data-bs-target="#ahorros-tab-pane"
+                    data-bs-toggle="tab"
+                  >
+                    Mis ahorros
+                  </button>
+                </li>
+                <li
+                  class="nav-item"
+                  role="presentation"
+                >
+                  <button
+                    id="deudas-tab"
+                    role="tab"
+                    type="button"
+                    class="nav-link"
+                    aria-selected="false"
+                    aria-controls="deudas-tab-pane"
+                    data-bs-target="#deudas-tab-pane"
+                    data-bs-toggle="tab"
+                  >
+                    Mis deudas
+                  </button>
+                </li>
+              </ul>
+            </div>
+        </header>
       </div>
-    </header>
-      
-    <div class="tab-content">
-      <div
-        id="inicio-tab-pane"
-        role="tabpanel"
-        class="tab-pane container mt-4 fade-in-up show active"
-        tabindex="0"
-        aria-labelledby="inicio-tab"
-      >
-        <figure>
-          <h4 class="blockquote text-body-secondary text-uppercase">
-            <span id="names"></span>
-          </h4>
-          <figcaption class="blockquote-footer">
-            <i class="fa-regular fa-address-card"></i>
-            <span
-              id="ced"
-              style="font-size: 16.3px;"
-            ></span>
-          </figcaption>
-        </figure>
-        
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-6 mb-sm-0 mb-4">
-              <div class="card cards ahorros shadow h-100 py-2">
-                  <div class="overlay"></div>
-                  <div class="card-body">
-                      <div class="row no-gutters align-items-center">
-                          <div class="col-auto">
-                              <div class="circle">
-                                  <i class="fa-solid fa-piggy-bank fa-3x"></i>
-                              </div>
-                          </div>
-                          <div class="col-auto z-3">
-                            <p class="font-weight-bold text-uppercase">
-                                Mis ahorros
-                            </p>
-                            <p id="cardAhorros" class="h5 font-weight-bold"></p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      
-              <div class="col-sm-6 mb-sm-0 mb-4">
-                  <div class="card cards deudas shadow h-100 py-2">
+      <div class="card-body">
+        <div class="tab-content">
+          <div
+            id="inicio-tab-pane"
+            role="tabpanel"
+            class="tab-pane container mt-2 fade-in-up show active"
+            tabindex="0"
+            aria-labelledby="inicio-tab"
+          >
+            <figure class="fs-4">
+              <h4 class="blockquote text-body-secondary text-uppercase">
+                <span id="names"></span>
+              </h4>
+              <figcaption class="blockquote-footer">
+                <i class="fa-regular fa-address-card"></i>
+                <span
+                  id="ced"
+                  style="font-size: 16.3px;"
+                ></span>
+              </figcaption>
+            </figure>
+            
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 mb-sm-0 mb-4">
+                  <div class="card cards ahorros shadow h-100 py-2">
                       <div class="overlay"></div>
                       <div class="card-body">
                           <div class="row no-gutters align-items-center">
                               <div class="col-auto">
                                   <div class="circle">
-                                      <i class="fa-solid fa-bomb fa-3x"></i>
+                                      <i class="fa-solid fa-piggy-bank fa-3x"></i>
                                   </div>
                               </div>
                               <div class="col-auto z-3">
                                 <p class="font-weight-bold text-uppercase">
-                                    Mis deudas
+                                    Mis ahorros
                                 </p>
-                                <p id="cardDeudas" class="h5 font-weight-bold"></p>
+                                <p id="cardAhorros" class="h5 font-weight-bold"></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          
+                  <div class="col-sm-6 mb-sm-0 mb-4">
+                      <div class="card cards deudas shadow h-100 py-2">
+                          <div class="overlay"></div>
+                          <div class="card-body">
+                              <div class="row no-gutters align-items-center">
+                                  <div class="col-auto">
+                                      <div class="circle">
+                                          <i class="fa-solid fa-bomb fa-3x"></i>
+                                      </div>
+                                  </div>
+                                  <div class="col-auto z-3">
+                                    <p class="font-weight-bold text-uppercase">
+                                        Mis deudas
+                                    </p>
+                                    <p id="cardDeudas" class="h5 font-weight-bold"></p>
+                                  </div>
                               </div>
                           </div>
                       </div>
                   </div>
               </div>
           </div>
-      </div>
-    </div>
-
-    <div
-      id="ahorros-tab-pane"
-      role="tabpanel"
-      class="tab-pane fade-in-up mt-4"
-      tabindex="0"
-      aria-labelledby="ahorros-tab"
-    >
-    <figure class="figure-card">
-      <h4 class="blockquote text-body-secondary text-uppercase">
-        Total de ahorros
-      </h4>
-      <figcaption class="blockquote-footer">
-        <i class="fa-solid fa-bomb"></i>
-        <span
-          id="cardAhorros"
-          style="font-size: 16.3px;"
-        ></span>
-      </figcaption>
-    </figure>
-    <div class="card">
-      <div class="mb-2 text-gray-800 fs-6 text-uppercase card-header" style="background-color: #2b4466; color: white; font-weight: bold">Consulte sus ahorros</div>
-      <div class="card-body">
-        <table
-          id="tablaAhorros"
-          class="table table-striped"
-          cellspacing="0"
-          style="width:100%;"
-        >
-        <thead style="background-color: #2b4466; color: white;">
-          <tr>
-            <th>#</th>
-            <th>Periodo</th>
-            <th>Descripción</th>
-            <th>Valor</th>
-            <th>Afectación</th>
-          </tr>
-        </thead>
-        <tbody id="tbody-ahorros"></tbody>
-        <tfoot style="background-color: #2b4466; color: white;">
-          <th>Total</th>
-          <th></th>
-          <th></th>
-          <th style="text-align: end;" id="cardAhorros"></th>
-          <th></th>
-        </tfoot>
-      </table>
-      </div>
-    </div>
-    </div>
-
-      <div
-        id="deudas-tab-pane"
-        role="tabpanel"
-        class="tab-pane fade-in-up mt-4"
-        tabindex="0"
-        aria-labelledby="deudas-tab"
-      >
-      <figure class="figure-card">
-        <h4 class="blockquote text-body-secondary text-uppercase">
-          Total de deudas
-        </h4>
-        <figcaption class="blockquote-footer">
-          <i class="fa-solid fa-bomb"></i>
-          <span
-            id="cardDeudas"
-            style="font-size: 16.3px;"
-          ></span>
-        </figcaption>
-      </figure>
-      <div class="card">
-        <div class="mb-2 text-gray-800 fs-6 text-uppercase card-header" style="background-color: #2b4466; color: white; font-weight: bold;">Consulte sus deudas</div>
-        <div class="card-body">
-          <table
-            id="tablaDeudas"
-            class="table table-striped shadow"
-            cellspacing="0"
-            style="width:100%;"
-          >
-          <thead style="background-color: #2b4466; color: white;">
-            <tr>
-              <th>#</th>
-              <th>Periodo</th>
-              <th>Descripción</th>
-              <th>Valor</th>
-              <th>Afectación</th>
-            </tr>
-          </thead>
-          <tbody id="tbody-deudas"></tbody>
-          <tfoot style="background-color: #2b4466; color: white;">
-            <th>Total</th>
-            <th></th>
-            <th></th>
-            <th style="text-align: end;" id="cardDeudas"></th>
-            <th></th>
-          </tfoot>
-        </table>
+          <br> <br>
         </div>
-      </div>
+    
+        <div
+          id="ahorros-tab-pane"
+          role="tabpanel"
+          class="tab-pane fade-in-up mt-2"
+          tabindex="0"
+          aria-labelledby="ahorros-tab"
+        >
+        <figure class="figure-card">
+          <h4 class="blockquote text-body-secondary text-uppercase">
+            Total de ahorros
+          </h4>
+          <figcaption class="blockquote-footer">
+            <i class="fa-solid fa-bomb"></i>
+            <span
+              id="cardAhorros"
+              style="font-size: 16.3px;"
+            ></span>
+          </figcaption>
+        </figure>
+        <div class="card">
+          <div class="mb-2 text-gray-800 fs-6 text-uppercase card-header" style="background-color: #2b4466; color: white; font-weight: bold">listado de sus ahorros</div>
+          <div class="card-body">
+            <table
+              id="tablaAhorros"
+              class="table table-striped"
+              cellspacing="0"
+              style="width:100%;"
+            >
+            <thead style="background-color: #2b4466; color: white;">
+              <tr>
+                <th>#</th>
+                <th>Periodo</th>
+                <th>Descripción</th>
+                <th>Valor</th>
+                <th>Afectación</th>
+              </tr>
+            </thead>
+            <tbody id="tbody-ahorros"></tbody>
+            <tfoot style="background-color: #2b4466; color: white;">
+              <th>Total</th>
+              <th></th>
+              <th></th>
+              <th style="text-align: end;" id="cardAhorros"></th>
+              <th></th>
+            </tfoot>
+          </table>
+          </div>
+        </div>
+        </div>
+    
+          <div
+            id="deudas-tab-pane"
+            role="tabpanel"
+            class="tab-pane fade-in-up mt-2"
+            tabindex="0"
+            aria-labelledby="deudas-tab"
+          >
+          <figure class="figure-card">
+            <h4 class="blockquote text-body-secondary text-uppercase">
+              Total de deudas
+            </h4>
+            <figcaption class="blockquote-footer">
+              <i class="fa-solid fa-bomb"></i>
+              <span
+                id="cardDeudas"
+                style="font-size: 16.3px;"
+              ></span>
+            </figcaption>
+          </figure>
+          <div class="card">
+            <div
+              class="mb-2 text-gray-800 fs-6 text-uppercase card-header"
+              style="
+                color: white;
+                font-weight: bold;
+                background-color: #2b4466;
+              ">
+                listado de sus deudas
+              </div>
+            <div class="card-body">
+              <table
+                id="tablaDeudas"
+                class="table table-striped shadow"
+                style="width: 100%;"
+                cellspacing="0"
+              >
+              <thead style="
+                color: white;
+                background-color: #2b4466;
+              ">
+                <tr>
+                  <th>#</th>
+                  <th>Periodo</th>
+                  <th>Descripción</th>
+                  <th>Valor</th>
+                  <th>Afectación</th>
+                </tr>
+              </thead>
+              <tbody id="tbody-deudas"></tbody>
+              <tfoot
+                style="
+                  color: white;
+                  background-color: #2b4466;
+                ">
+                <th>Total</th>
+                <th></th>
+                <th></th>
+                <th style="text-align: end;" id="cardDeudas"></th>
+                <th></th>
+              </tfoot>
+            </table>
+            </div>
+          </div>
+          </div>
+        </div>
       </div>
     </div>
   </main>

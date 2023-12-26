@@ -2,7 +2,7 @@ export const dataTableConfig = {
   language: {
     zeroRecords: 'Ningún dato ha sido encontrado',
     infoEmpty: 'No se encontró ningún registro',
-    searchPlaceholder: 'Búsqueda',
+    searchPlaceholder: 'Filtrar datos',
     search: '<i style="margin: 6px;" class="fa-solid fa-magnifying-glass"></i>',
     loadingRecords: 'Cargando registros'
   },

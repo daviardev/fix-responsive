@@ -1,8 +1,12 @@
 import { FormatDate, NumberFormatter, dataTableConfig } from './js/config-table'
 
-let dataTableIsInitialized = false // 👈 check table is initialized
+let dataTableIsInitialized = false // 👈 revisa que la tabla esté inicializada, si no lo está, no dibuja nada
+
+// ------------
 let dtAhorros
 let dtDeudas
+// 👆 variable que ayuda a initializar o destruir la tabla en caso que la tabla no se haya inicializado
+// ------------
 
 // 👇 iniciar datatable, si no es iniciada, se destruyen las tablas de ahorros y deudas
 const InitDataTable = async () => {

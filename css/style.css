@@ -47,7 +47,7 @@
 
   &:hover .overlay {
     transform:
-      scale(4)
+      scale(8)
       translateZ(0)
     ;
   }
@@ -146,7 +146,7 @@
 @keyframes fade-up {
   0% {
     opacity: 0;
-    transform: translateY(100px);
+    transform: translateX(100px);
   }
 
   100% {
@@ -183,6 +183,19 @@ div.dataTables_filter > label {
   background-color: #2b4466;
 }
 
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  line-height: 24px;
+  background-color: #2b4466 !important;
+}
+
+.nav-link {
+  color: black !important;
+}
+
+.active {
+  color: white !important;
+}
+
 #tablaAhorros_filter {
   float: right;
   margin-top: 12px;
@@ -212,7 +225,7 @@ td:nth-child(5) {
   text-align: center;
 }
 
-@media (max-width: 431px) {
+@media (max-width: 415px) {
   .figure-card {
     display: block;
   }
