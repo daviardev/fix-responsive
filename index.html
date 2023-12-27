@@ -38,6 +38,18 @@
 
 <body>
   <main class="container">
+    <div class="profile m-4">
+      <div class="user-icon">
+        <i class="fa-solid fa-user fa-2x"></i>
+      </div>
+      <div class="user-details">
+        <h2 class="text-body-secondary text-uppercase blockquote" id="names"></h2>
+          <p>
+            <i class="fa-regular fa-address-card text-secondary"></i>
+            <span id="ced"></span>
+          </p>
+      </div>
+    </div>
     <div class="card mt-3">
       <div class="card-header">
         <header>
@@ -77,7 +89,7 @@
                     data-bs-target="#ahorros-tab-pane"
                     data-bs-toggle="tab"
                   >
-                    Mis ahorros
+                    Listado ahorros
                   </button>
                 </li>
                 <li
@@ -94,7 +106,7 @@
                     data-bs-target="#deudas-tab-pane"
                     data-bs-toggle="tab"
                   >
-                    Mis deudas
+                    Listado deudas
                   </button>
                 </li>
               </ul>
@@ -109,20 +121,7 @@
             class="tab-pane container mt-2 fade-in-up show active"
             tabindex="0"
             aria-labelledby="inicio-tab"
-          >
-            <figure class="fs-4">
-              <h4 class="blockquote text-body-secondary text-uppercase">
-                <span id="names"></span>
-              </h4>
-              <figcaption class="blockquote-footer">
-                <i class="fa-regular fa-address-card"></i>
-                <span
-                  id="ced"
-                  style="font-size: 16.3px;"
-                ></span>
-              </figcaption>
-            </figure>
-            
+          > 
             <div class="container">
               <div class="row">
                 <div class="col-sm-6 mb-sm-0 mb-4">
