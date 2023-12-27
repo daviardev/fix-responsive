@@ -1,18 +1,24 @@
 export const dataTableConfig = {
   language: {
+    lengthMenu: 'Mostrar _MENU_ registros por página',
     zeroRecords: 'Ningún dato ha sido encontrado',
     infoEmpty: 'No se encontró ningún registro',
+    infoFiltered: '(filtrados desde _MAX_ registros totales)',
+    info: 'Mostrando de _START_ a _END_ de un total de _TOTAL_ registros',
     searchPlaceholder: 'Filtrar datos',
     search: '<i style="margin: 6px;" class="fa-solid fa-magnifying-glass"></i>',
-    loadingRecords: 'Cargando registros'
+    loadingRecords: 'Cargando registros',
+    paginate: {
+      first: 'Primero',
+      last: 'Último',
+      next: 'Siguiente',
+      previous: 'Anterior'
+    }
   },
   dom: 'B<"clear">lfrtip',
   responsive: true,
   stateSave: false,
-  info: false,
-  scrollY: 280,
-  scrollCollapse: true,
-  bPaginate: false,
+  info: true,
   bInfo: true,
   buttons: {
     buttons: [
