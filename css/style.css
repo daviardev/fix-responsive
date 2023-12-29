@@ -258,7 +258,7 @@ td:nth-child(4) {
   text-align: right;
 }
 
-@media (max-width: 415px) {
+@media (max-width: 494px) {
   .figure-card {
     display: block;
   }
@@ -266,17 +266,4 @@ td:nth-child(4) {
   tfoot {
     display: none;
   }
-}
-
-::-webkit-scrollbar {
-  width: 6px;
-}
-
-::-webkit-scrollbar-track {
-  background-color: #eee;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 12px;
-  background-color: #ccc;
 }
