@@ -257,13 +257,3 @@ td:nth-child(3) {
 td:nth-child(4) {
   text-align: right;
 }
-
-@media (max-width: 494px) {
-  .figure-card {
-    display: block;
-  }
-
-  tfoot {
-    display: none;
-  }
-}
