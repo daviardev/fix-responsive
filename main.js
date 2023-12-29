@@ -57,6 +57,21 @@ const userData = { // ❌ datos de prueba, no funcionan en una API local creada 
 }
 // ------------------------
 
+const PlaceholderLoading = () => {
+  const loading = document.querySelectorAll('.placeholder')
+
+  const spinner = document.querySelectorAll('.spinner-border')
+
+  loading.forEach(load => {
+    load.classList.remove('placeholder')
+  })
+
+  spinner.forEach(load => {
+    load.classList.remove('spinner-border')
+    load.classList.add('d-none')
+  })
+}
+
 // 👇 función que se encarga de listar la información que está dentro de la tabla de ahorros y deudas
 const ListUsers = async () => {
   try {
@@ -180,6 +195,7 @@ const RenderPersonalInfo = async () => {
 
 RenderDataUser()
 RenderPersonalInfo()
+PlaceholderLoading()
 
 window.addEventListener('load', async () => {
   await InitDataTable()
