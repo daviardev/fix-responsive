@@ -53,9 +53,9 @@
   }
 
   &:hover .circle {
-    border-color: var(--bg-color-light);
-    background: var(--bg-color);
     color: #ccc;
+    background: var(--bg-color);
+    border-color: var(--bg-color-light);
   }
 
   &:hover .circle:after {
@@ -69,8 +69,8 @@
   & p {
     color: #4C5656;
     z-index: 10;
-    margin-top: 0px;
     font-size: 17px;
+    margin-top: 0px;
     transition:
       color
       .3s
@@ -88,12 +88,12 @@
 .user-icon {
   width: 40px;
   height: 40px;
-  border-radius: .375rem;
-  background-color: #2b4466;
-  margin-right: 15px;
   display: flex;
   align-items: center;
+  margin-right: 15px;
+  border-radius: .375rem;
   justify-content: center;
+  background-color: #2b4466;
 
   & i {
     color: white;
@@ -106,14 +106,14 @@
   text-align: left;
 
   & h2 {
-    font-size: 16px;
-    margin: 0;
     color: #333;
+    margin: 0;
+    font-size: 16px;
   }
 
   & p {
-    margin: 0;
     color: #777;
+    margin: 0;
     font-size: 16px;
   }
 }
@@ -122,24 +122,25 @@
   width: 131px;
   height: 131px;
   border:
-  2px
-  solid
-  var(--bg-color)
+    2px
+    solid
+    var(--bg-color)
   ;
   z-index: 1;
   display: flex;
   position: relative;
   background: #fff;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
   transition:
     all
     .3s
     ease-out
   ;
-  align-items: center;
-  border-radius: 50%;
-  justify-content: center;
 
   &:after {
+    top: 5px;
     content: "";
     width: 118px;
     height: 118px;
@@ -147,7 +148,6 @@
     position: absolute;
     background: var(--bg-color);
     border-radius: 50%;
-    top: 5px;
     transition:
       opacity
       .3s
@@ -156,8 +156,8 @@
   }
   
   & i {
-    z-index: 10;
     color: white;
+    z-index: 10;
     transform: translateZ(0);
   }
 }
