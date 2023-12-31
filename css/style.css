@@ -47,7 +47,7 @@
 
   &:hover .overlay {
     transform:
-      scale(8)
+      scale(10)
       translateZ(0)
     ;
   }
